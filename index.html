@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Hello-Jolidon</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hello Jolidon</title>
+
+    <style>
+
+        /* Style général */
+
+        body {
+
+            margin: 0;
+
+            padding: 0;
+
+            font-family: Arial, sans-serif;
+
+        }
+
+        /* Conteneur principal avec dégradé */
+
+        .container {
+
+            height: 100vh; /* pleine hauteur écran */
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            background: linear-gradient(to right, blue, violet, pink, red);
+
+        }
+
+        /* La boîte avec le texte */
+
+        .box {
+
+            padding: 20px 40px;
+
+            text-align: center;
+
+            font-size: 24px;
+
+            font-weight: bold;
+
+            border: 2px dotted black; /* Bordure pointillée */
+
+            position: relative;
+
+            background-color: rgba(255, 255, 255, 0.2); /* Légère transparence */
+
+        }
+
+        /* Bordure externe décorative */
+
+        .box::after {
+
+            content: "";
+
+            position: absolute;
+
+            top: -8px;
+
+            left: -8px;
+
+            right: -8px;
+
+            bottom: -8px;
+
+            border: 2px solid gold; /* Couleur dorée */
+
+            border-radius: 4px;
+
+            opacity: 0.8;
+
+        }
+
+        /* Texte : cacher version mobile par défaut */
+
+        .mobile-text {
+
+            display: none;
+
+        }
+
+        /* Responsivité : écran ≤ 600px */
+
+        @media (max-width: 600px) {
+
+            .container {
+
+                height: auto;
+
+                padding: 40px 0; /* effet bandeau */
+
+            }
+
+            .box {
+
+                font-size: 18px;
+
+                padding: 10px 20px;
+
+            }
+
+            /* Cacher texte desktop et montrer texte mobile */
+
+            .desktop-text {
+
+                display: none;
+
+            }
+
+            .mobile-text {
+
+                display: inline;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="box">
+
+            <span class="desktop-text">Hello World</span>
+
+            <span class="mobile-text">Hello Jolidon</span>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+<!-- partial -->
+  
+</body>
+</html>
